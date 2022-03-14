@@ -10,7 +10,7 @@
 </head>
 <body>
   <p align="center">Щелкните по мне 2 раза и я исчезну!</p>
-  <button>Вернуть текст</button>
+  <button>Вернуть текст (щелкните 2 раза)</button>
   <script>
     $(document).ready(function () {
       $("[align='center']").dblclick(function () {
@@ -18,7 +18,7 @@
       });
     });
     $(document).ready(function () {
-        $("button").click(function () {
+        $("button").dblclick(function () {
           $("[align='center']").toggle(true);
         });
       });
